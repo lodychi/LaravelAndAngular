@@ -1,0 +1,21 @@
+<div class="align-center">
+    <h2>User Login</h2>
+    <form>
+        <input placeholder="Email" type="text" name="email" [(ngModel)]="userLogin.email"/>
+        <input type="password" name="password" [(ngModel)]="userLogin.password"/>
+        <div class="btn-div">
+            <button type="button" class="login-btn" (click)="login()"> Login </button>
+            <button type="button" class="login-btn" (click)="logout()"> Logout </button>
+            <button type="button" class="login-btn" (click)="test()"> test </button>
+        </div>
+    </form>
+    <h2>User Register</h2>
+    <form>
+        <input placeholder="Name" type="text" name="name" [(ngModel)]="userRegister.name"/>
+        <input placeholder="Email" type="text" name="email" [(ngModel)]="userRegister.email"/>
+        <input type="password" name="password" [(ngModel)]="userRegister.password"/>
+        <div class="btn-div">
+            <button type="button" class="login-btn" (click)="register()"> Login </button>
+        </div>
+    </form>
+  </div>
